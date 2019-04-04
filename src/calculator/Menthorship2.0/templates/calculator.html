@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <!--  <link rel="icon" href="https://getbootstrap.com/favicon.ico"> -->
+
+    <title>Simple web calculator</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-bottom/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+<body>
+    <div class="container">
+      <div class="jumbotron mt-3">
+        <h1>Simple calculator</h1>
+
+  <form method="post">
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      
+    <label >First Number</label>
+    {{ form.hidden_tag() }}
+  {{ form.First_Num (class_="form-control", placeholder="First number here") }}
+    <label >Second Number</label>
+    {{ form.Second_Num(class_="form-control", placeholder = "Second number here") }}
+  
+  </div>
+  </br>
+<div class="container">
+    <h3>Choose any</h3>
+      {{ form.plus (class="btn btn-primary",title="maths is fun") }}
+    {{ form.minus (class="btn btn-light",title="maths is fun") }}  
+     {{ form.multiply (class="btn btn-info", title="maths is fun") }}
+     {{ form.divide (class="btn btn-dark", title="maths is fun")}}
+
+</div>
+
+</form>
+        
+     </br>
+     <div class="container">
+      <p>
+        {% if form.plus.data %}
+        Addition result is {{add}}
+        {% endif %}
+        {% if form.minus.data %}
+        Substraction result is {{substract}}
+        {% endif %}
+        {% if form.multiply.data %}
+        MUltiplication result is {{mult}}
+        {% endif %}
+        {% if form.divide.data %}
+        Division result is {{divide}}
+        {% endif %}
+      </p>
+  </div>    
+   </div></div></form>
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Helen Bire-2019</a>
+      
+      
+      </button>
+   
+    </nav>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+  </body>
