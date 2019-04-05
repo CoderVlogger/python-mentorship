@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+    <style>
+      .inner{
+        margin-top: 50px;
+        margin-left: 250px;
+        margin-right: 250px;
+      }
+      </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+<form method="POST">
+      <div class="inner">
+        <div class="form-group row">
+          <label for="input" class="col-sm-2 col-form-label">Input first number:</label>
+            <div class="col-sm-10">
+              <input type="text" name="first" class="form-control" placeholder="Type..." id="input">
+            </div>
+        </div>
+        <div class="form-group row">
+          <label for="input" class="col-sm-2 col-form-label">Input second number:</label>
+            <div class="col-sm-10">
+              <input type="text" name="second" class="form-control" placeholder="Type..." id="input">
+            </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Choose action:</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input type="radio" name="action" value="Add" checked> Add ( + ) <br>
+                  <input type="radio" name="action" value="Subtract"> Subtract ( - ) <br>
+                  <input type="radio" name="action" value="Divide"> Divide ( / ) <br>
+                  <input type="radio" name="action" value="Multiply"> Multiply ( * ) <br>
+                </div>
+              </div>
+          </div>
+        </fieldset>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <input type="submit" class="btn btn-outline-dark" value="=">
+          </div>
+        </div>
+      </div>
+    </form>
+</body>
+</html>
