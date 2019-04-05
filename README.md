@@ -21,7 +21,7 @@ Introduction videos:
 
 # Assignments
 
-## Assignment #1
+### Assignment #1
 
 [![Assignment #1](https://img.youtube.com/vi/UwpZayjeUjE/0.jpg)](https://www.youtube.com/watch?v=UwpZayjeUjE)
 
