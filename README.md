@@ -21,7 +21,7 @@ Introduction videos:
 
 # Assignments
 
-### Assignment #1
+## Assignment #1
 
 [![Assignment #1](https://img.youtube.com/vi/UwpZayjeUjE/0.jpg)](https://www.youtube.com/watch?v=UwpZayjeUjE)
 
@@ -35,5 +35,8 @@ Details:
 Solved by:
 @mirpulatov, @Jlopezjlx, @Prrrince, @HelSirius
 
-Solutions:
+#### Solutions
 https://github.com/CoderVlogger/python-mentorship/tree/master/assignments/calculator
+
+#### Code review for the Assignment #1
+[![Assignment #1](https://img.youtube.com/vi/dVJJf07LcU8/0.jpg)](https://www.youtube.com/watch?v=dVJJf07LcU8)
