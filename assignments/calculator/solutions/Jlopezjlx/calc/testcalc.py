@@ -1,34 +1,34 @@
 import unittest
-import maths
+import calc
 
 class testing_calc(unittest.TestCase):
     
     
     def test_sumar(self):
-        result = maths.sumar(2,3)
+        result = calc.sumar(2,3)
         self.assertEqual(5,result)
     
 
     def test_restar(self):
-        result = maths.restar(2,3)
+        result = calc.restar(2,3)
         expected = 2 - 3
         self.assertEqual(expected,result)
     
 
     def test_multiplcacion(self):
-        result = maths.multiplicacion(2,3)
+        result = calc.multiplicacion(2,3)
         expected = 2 * 3
         self.assertEqual(expected, result)
     
 
     def test_division(self):
-        result = maths.division(2,3)
+        result = calc.division(2,3)
         expected = 2 / 3
         self.assertEqual(expected, result)  
     
 
     def test_restante(self):
-        result = maths.restante(2,3)
+        result = calc.restante(2,3)
         expected = 2 % 3
         self.assertEqual(expected, result)
 
