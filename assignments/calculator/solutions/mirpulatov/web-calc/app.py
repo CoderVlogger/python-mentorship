@@ -1,31 +1,32 @@
 from flask import Flask, render_template, request
+from calc import Calculator
 
 app = Flask(__name__)
 
-
 @app.route('/')
-def calc():
+def home():
     return render_template('calc.html')
 
-
 @app.route('/', methods=['POST'])
-def calc_post():
+def home_post():
     res = request.form
     try:
         first = int(res['first'])
         second = int(res['second'])
     except ValueError as e:
         return e
-    if res['action'] == 'Add':
-        return str(first + second)
-    elif res['action'] == 'Subtract':
-        return str(first - second)
-    elif res['action'] == 'Multiply':
-        return str(first * second)
-    elif res['action'] == 'Divide':
-        if second == 0:
-            return "Division by zero"
-        return str(first / second)
+    calc = Calculator(first, second)
+    try:
+        if res['action'] == 'Add':
+            return 'Result: {}'.format(calc.plus())
+        elif res['action'] == 'Subtract':
+            return 'Result: {}'.format(calc.minus())
+        elif res['action'] == 'Multiply':
+            return 'Result: {}'.format(calc.multiply())
+        elif res['action'] == 'Divide':
+            return 'Result: {}'.format(calc.div())
+    except Exception as e:
+        print(e)
 
 
 if __name__ == '__main__':
