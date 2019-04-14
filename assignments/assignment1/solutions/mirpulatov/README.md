@@ -1,2 +1,0 @@
-# pyCalculator
-Calculator using python
