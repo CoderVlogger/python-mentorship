@@ -62,8 +62,9 @@ Topics:
 
 #### Tutorial videos
 
-1. [Introduction & Custom User Model](https://youtu.be/cg0KNJZqInY)
-2. [Setup URLs, templates and HTML views for Account application](https://youtu.be/yNlRzTfZi8Q)
+1. [Django Web Framework: How to Setup Django 2.1 and Python 3 Example Project Structure with GitHub](https://youtu.be/d4QoVKEkPjI)
+2. [Introduction & Custom User Model](https://youtu.be/cg0KNJZqInY)
+3. [Setup URLs, templates and HTML views for Account application](https://youtu.be/yNlRzTfZi8Q)
 
 #### Solutions
 
