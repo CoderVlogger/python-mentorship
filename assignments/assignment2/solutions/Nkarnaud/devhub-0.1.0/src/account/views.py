@@ -7,7 +7,7 @@ from account.forms import SignUpForm
 
 # Create your views here.
 def index(request):
-    return redirect('index')
+    return render(request, 'account/index.html')
 
 
 def signup(request):
