@@ -1,7 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, UserManager
 
-
+class AccountManager(UserManager):
+    pass
 class Account(AbstractUser):
     """
     With this class we are customazing Django's User model.
@@ -9,3 +10,4 @@ class Account(AbstractUser):
     https://docs.djangoproject.com/en/dev/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project
     """
     REQUIRED_FIELDS = ['email']
+    object = AccountManager()

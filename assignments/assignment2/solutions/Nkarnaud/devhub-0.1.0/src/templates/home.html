@@ -1,0 +1,9 @@
+<!-- templates/home.html -->
+<h1>Dev Hub Home Page</h1>
+{% if user.is_authenticated %}
+<p>Hi {{ user.username }}</p>
+<p><a href="{% url 'logout' %}">Log out</a></p>
+{% else %}
+<p><a href="{% url 'signup' %}">Sign Up</a></p>
+<p><a href="{% url 'login' %}">Log In </a></p>
+{% endif %}
