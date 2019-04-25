@@ -1,0 +1,11 @@
+{% block content %}
+  <head>
+    <link rel="stylesheet" href="/static/register.css">
+  </head>
+  <form method="post">
+    <h2>Sign up</h2>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+  </form>
+{% endblock %}

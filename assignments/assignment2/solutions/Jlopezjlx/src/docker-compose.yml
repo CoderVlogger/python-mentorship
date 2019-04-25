@@ -1,0 +1,27 @@
+version: '3'
+
+
+services:
+  db_devhub:
+    container_name: db_devhub
+    image: postgres:9.6.12
+    environment: 
+      - "POSTGRES_PASSWORD:12345"
+    ports:
+      - 8085:8080
+      - 5432:5432
+    networks: 
+      - devhub
+  web-app:
+    container_name: devhub_run_app
+    build: .
+    ports:
+      - 8000:8000
+    depends_on:
+      - db_devhub
+    networks: 
+      - devhub
+
+
+networks: 
+  devhub:
